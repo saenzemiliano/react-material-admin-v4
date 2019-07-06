@@ -105,6 +105,17 @@ export default {
         },
       }
     },
+    MuiListItemText: {
+      root: {
+        marginTop: 0,
+        marginBottom: 0
+      }
+    },
+    MuiListItemIcon: {
+      root: {
+        minWidth: 24,
+      }
+    },
     MuiTouchRipple: {
       child: {
         backgroundColor: "white"

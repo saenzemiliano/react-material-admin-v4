@@ -180,9 +180,9 @@ const styles = theme => ({
     paddingLeft: theme.spacing(4.5) + 40
   },
   sectionTitle: {
-    marginLeft: theme.spacing(4.5),
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2)
+    marginLeft: `${theme.spacing(4.5)}px !important`,
+    marginTop: `${theme.spacing(2)}px !important`,
+    marginBottom: `${theme.spacing(2)}px !important`,
   },
   divider: {
     marginTop: theme.spacing(2),
