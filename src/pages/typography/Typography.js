@@ -8,7 +8,7 @@ import { Typography } from '../../components/Wrappers';
 const TypographyPage = ({ classes }) => (
   <React.Fragment>
     <PageTitle title="Typography"/>
-    <Grid container spacing={32}>
+    <Grid container spacing={4}>
       <Grid item xs={12} md={6}>
         <Widget title="Headings" disableWidgetMenu>
           <div className={classes.dashedBorder}>

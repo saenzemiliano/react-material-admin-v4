@@ -30,7 +30,7 @@ const datatableData = [
 const Tables = props => (
   <React.Fragment>
     <PageTitle title="Tables" />
-    <Grid container spacing={32}>
+    <Grid container spacing={4}>
       <Grid item xs={12}>
         <MUIDataTable
           title="Employee List"

@@ -32,7 +32,7 @@ const IconsPage = ({ classes, ...props }) => (
       </Tabs>
       {props.activeTabId === 0 && (
         <div>
-          <Grid container spacing={32} className="icon-list">
+          <Grid container spacing={4} className="icon-list">
             <Grid
               className={classes.materailIcon}
               item
@@ -12411,7 +12411,7 @@ const IconsPage = ({ classes, ...props }) => (
 
       {props.activeTabId === 1 && (
         <div>
-          <Grid container spacing={32} className="icon-list">
+          <Grid container spacing={4} className="icon-list">
             <Grid
               className={classes.materailIcon}
               item
@@ -13553,7 +13553,7 @@ const IconsPage = ({ classes, ...props }) => (
       )}
       {props.activeTabId === 2 && (
         <div>
-          <Grid container spacing={32} className="icon-list">
+          <Grid container spacing={4} className="icon-list">
             <Grid
               className={classes.materailIcon}
               item

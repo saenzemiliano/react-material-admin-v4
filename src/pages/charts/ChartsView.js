@@ -100,7 +100,7 @@ const renderActiveShape = (props) => {
 const ChartsView = (props) => (
     <React.Fragment>
       <PageTitle title="Charts Page - Data Display" button="Latest Reports" />
-      <Grid container spacing={32}>
+      <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Widget title="Apex Line Chart" upperTitle noBodyPadding>
             <ApexLineChart />

@@ -81,7 +81,7 @@ const Dashboard = ({ classes, theme, ...props }) => {
   return (
     <React.Fragment>
       <PageTitle title="Dashboard" button="Latest Reports" />
-      <Grid container spacing={32}>
+      <Grid container spacing={4}>
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
             title="Visits Today"
@@ -271,7 +271,7 @@ const Dashboard = ({ classes, theme, ...props }) => {
         </Grid>
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget title="Revenue Breakdown" upperTitle className={classes.card}>
-            <Grid container spacing={16}>
+            <Grid container spacing={2}>
               <Grid item xs={6}>
                 <ResponsiveContainer width="100%" height={144}>
                   <PieChart
