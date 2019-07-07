@@ -93,14 +93,16 @@ export default {
       }
     },
     MuiListItem: {
+      root: {
+        '&$selected': {
+          'backgroundColor': '#F3F5FF !important',
+          '&:focus': {
+            'backgroundColor': '#F3F5FF'
+          }
+        }
+      },
       button: {
         '&:hover, &:focus': {
-          backgroundColor: '#F3F5FF',
-        },
-      },
-      selected: {
-        backgroundColor: '#F3F5FF !important',
-        '&:focus': {
           backgroundColor: '#F3F5FF',
         },
       }
