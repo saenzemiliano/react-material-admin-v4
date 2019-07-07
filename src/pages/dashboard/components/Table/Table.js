@@ -9,8 +9,8 @@ import {
 import { Button } from '../../../../components/Wrappers';
 
 const states = {
-  sent: "success",
-  pending: "warning",
+  sent: "primary",
+  pending: "default",
   declined: "secondary"
 };
 
@@ -22,7 +22,7 @@ const TableComponent = ({ data }) => {
       <TableHead>
         <TableRow>
           {keys.map(key => (
-            <TableCell>{key}</TableCell>
+            <TableCell key={key}>{key}</TableCell>
           ))}
         </TableRow>
       </TableHead>

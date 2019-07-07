@@ -27,12 +27,12 @@ const Layout = ({ classes, isSidebarOpened, toggleSidebar }) => (
           <div className={classes.fakeToolbar} />
           <Switch>
             <Route path="/app/dashboard" component={Dashboard} />
-            <Route path="/app/typography" component={Typography} />
+            <Route path="/app/typography" component={() => <Typography/>} />
             <Route path="/app/tables" component={Tables} />
             <Route path="/app/buttons" component={Buttons} />
-            <Route path="/app/notifications" component={Notifications} />
+            <Route path="/app/notifications" component={() => <Notifications/>} />
             <Route exact path="/app/ui" render={() => <Redirect to="/app/ui/icons" />} />
-            <Route path="/app/ui/maps" component={Maps} />
+            <Route path="/app/ui/maps" component={() => <Maps/>} />
             <Route path="/app/ui/icons" component={Icons} />
             <Route path="/app/ui/charts" component={Charts} />
           </Switch>

@@ -35,7 +35,7 @@ const messages = [
   },
   {
     id: 1,
-    variant: "success",
+    variant: "primary",
     name: "Lloyd Brown",
     message: "Check out my new Dashboard",
     time: "9:18"
@@ -57,10 +57,10 @@ const messages = [
 ];
 
 const notifications = [
-  { id: 0, color: "warning", message: "Check out this awesome ticket" },
+  { id: 0, color: "default", message: "Check out this awesome ticket" },
   {
     id: 1,
-    color: "success",
+    color: "primary",
     type: "info",
     message: "What is the best way to get ..."
   },
@@ -137,7 +137,7 @@ const Header = ({ classes, isSidebarOpened, toggleSidebar, ...props }) => (
           badgeContent={
             props.isNotificationsUnread ? notifications.length : null
           }
-          color="warning"
+          color="secondary"
         >
           <NotificationsIcon classes={{ root: classes.headerIcon }} />
         </Badge>

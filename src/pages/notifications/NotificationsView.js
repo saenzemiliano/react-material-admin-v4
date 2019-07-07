@@ -49,7 +49,7 @@ const NotificationsPage = ({ classes, ...props}) => (
           <div className={classes.buttonsContainer}>
             <Button variant="contained" color="primary" onClick={() => props.handleNotificationCall('info')} className={classnames(classes.notificationCallButton)}>Info Message</Button>
             <Button variant="contained" color="secondary" onClick={() => props.handleNotificationCall('error')} className={classnames(classes.notificationCallButton)}>Error + Retry Message</Button>
-            <Button variant="contained" color="success" onClick={() => props.handleNotificationCall('success')} className={classnames(classes.notificationCallButton)}>Success Message</Button>
+            <Button variant="contained"  onClick={() => props.handleNotificationCall('success')} className={classnames(classes.notificationCallButton)}>Success Message</Button>
           </div>
         </Widget>
       </Grid>
@@ -110,6 +110,19 @@ const NotificationsPage = ({ classes, ...props}) => (
 );
 
 const styles = (theme) => ({
+  progress: {
+    visibility: "hidden"
+  },
+  notification: {
+    display: "flex",
+    alignItems: "center",
+    background: "transparent",
+    boxShadow: "none",
+    overflow: "visible"
+  },
+  notificationComponent: {
+    paddingRight: theme.spacing(4)
+  },
   layoutContainer: {
     height: 200,
     display: 'flex',

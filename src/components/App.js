@@ -54,7 +54,7 @@ const App = () => (
         <Route exact path="/app" render={() => <Redirect to="/app/dashboard" />} />
         <PrivateRoute path="/app" component={Layout} />
         <PublicRoute path="/login" component={Login} />
-        <Route component={Error} />
+        <Route component={() => <Error/>} />
       </Switch>
     </BrowserRouter>
   </MuiThemeProvider>
